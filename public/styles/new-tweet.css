@@ -1,0 +1,69 @@
+.new-tweet-form{
+  width: 90%;
+  /* align-items: center; */
+  flex-direction: row;
+}
+
+.new-tweet-text{
+  border-bottom: 0.1rem solid #11161a;
+  
+}
+
+.tweet-form{
+  justify-content: center;
+}
+
+.tweet-button{ 
+  font-family: "Bungee";
+  color: white;
+  background-color:#205b80;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+/* .tweet-button {
+  display:flex;
+  justify-content: left;
+}
+.counter {
+  display: flex;
+  justify-content: right;
+} */
+
+.tweet-button-counter{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.rhoda-tweets {
+  border-style: solid;
+  border-width: thick;
+  width: 90%;
+  flex-direction: row;
+  font-family: sans-serif;
+}
+.rhoda-tweets:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.rhoda-tweets-form{
+  margin: 10px
+}
+.rhoda-tweets-header {
+  padding-top: 10px;
+  display: flex;
+}
+#rhoda-tweets-icon {
+  margin-right: 5px;
+}
+.mrsjacobs{
+  margin-left: 70%;
+  color:#93999d;
+}
+.rhoda-tweets-details{
+  border-top: 0.1rem solid #11161a;
+}
+.rhoda-tweets-day {
+  margin: 10px;
+  margin-right: 80%
+}

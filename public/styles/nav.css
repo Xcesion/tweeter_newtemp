@@ -1,0 +1,25 @@
+nav {
+  /* Apply 'Bungee' font to the nav element */
+  height: 120px;
+  background-color: #205b80;
+  color: #FFFFFF ;
+  padding: 1.5em;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-tweeter{
+  font-family: 'Bungee', sans-serif;
+}
+
+.new-tweet-header{
+  font-family: sans-serif ;
+}
+
+i{
+  color: #de4917;
+}
+

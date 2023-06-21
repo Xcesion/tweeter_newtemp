@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Events Example</title>
+</head>
+<body>
+  <textarea id="myTextarea" rows="4" cols="50"></textarea>
+
+  <script>
+    const textarea = document.getElementById('myTextarea');
+
+    function handleKeyDown(event) {
+      console.log('keydown event:', event);
+    }
+
+    function handleKeyPress(event) {
+      console.log('keypress event:', event);
+    }
+
+    function handleKeyUp(event) {
+      console.log('keyup event:', event);
+    }
+
+    textarea.addEventListener('keydown', handleKeyDown);
+    textarea.addEventListener('keypress', handleKeyPress);
+    textarea.addEventListener('keyup', handleKeyUp);
+  </script>
+</body>
+</html>

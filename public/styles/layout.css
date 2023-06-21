@@ -3,6 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   box-sizing: border-box;
 }
@@ -18,8 +19,32 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  align-items: center;
 }
 
+
+/* .new-tweet-header{
+  font-family: 'Bungee', sans;
+} */
+/* .avatar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 4;
+} */
+
+main {  /* ask mentor how to make the with 90% as the core activity ask for */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #f4f1ec;
+  justify-content: center;
+  flex-direction: column;
+  align-content:flex-start
+}
+
+.toolong{
+  color:red;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
