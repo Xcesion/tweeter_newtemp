@@ -27,6 +27,8 @@
     <script src="https://kit.fontawesome.com/b5c203343b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Using timeago library into my project -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
@@ -57,7 +59,11 @@
             <label for="tweet-text">What are you humming about?</label>
           </div>
           <br>
-          <textarea name="text" id="tweet-text" placeholder="enter some text"></textarea>
+          <div>
+            <textarea name="text" id="tweet-text" placeholder="enter some text"></textarea>
+          </div>
+          <div class="error-message-max-length"></div>
+          <hr>
           <div class="tweet-button-counter ">
             <button class="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -65,26 +71,7 @@
         </form>
       </section>
       <br>
-      <section class="rhoda-tweets">
-        <form class="rhoda-tweets-form">
-          <div class="rhoda-tweets-header">
-            <i class="fa-solid fa-person-dress" style="color: #9f4766;" id="rhoda-tweets-icon"></i>
-            <label>Rhoda Jacobs</label>
-            <label class="mrsjacobs">@MrsJacobs</label>
-          </div>
-          <br>
-          <div>
-            <label>Hello world!</label>
-          </div>
-          <br>
-          <div class="rhoda-tweets-details">
-            <label class="rhoda-tweets-day">10 days</label>
-            <i class="fa-solid fa-flag" style="color: #354869;"></i>
-            <i class="fa-solid fa-retweet" style="color: #354869;"></i>
-            <i class="fa-solid fa-heart" style="color: #354869;"></i>
-          </div>
-        </form>
-      </section>
+      <section id="tweets-container"/>
     </main>
   </body>
 </html>

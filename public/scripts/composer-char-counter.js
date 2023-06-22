@@ -11,8 +11,8 @@ $(document).ready(function() {
   $("#tweet-text").on('input', function() {
     const inputValue = $(this).val();
     const inputLength = inputValue.length;
-    console.log("Hello this is a test", inputValue); //The this keyword is a reference to the button
-    console.log("Input Length:", inputLength);
+    // console.log("Hello this is a test", inputValue); //The this keyword is a reference to the button
+    // console.log("Input Length:", inputLength);
     $(".counter").text(140 - inputLength);
     if(inputLength>140){
       $(".counter").addClass("toolong");
@@ -20,4 +20,7 @@ $(document).ready(function() {
       $(".counter").removeClass("toolong");
     }
   });
+  // $(".counter").on('result', function() {
+  //   console.log("Hello this is a test for click", this); //The this keyword is a reference to the button
+  // });
 });
