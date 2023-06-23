@@ -3,8 +3,6 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
-// Test / driver code (temporary). Eventually will get this from the server.
 $(document).ready(function () {
   const tweetData = [
     {
@@ -32,20 +30,14 @@ $(document).ready(function () {
   ];
 
   const renderTweets = function (tweets) {
-    // loops through tweets
-    // const $tweetTextContainer = $('#tweets-container');
-    // $tweetTextContainer.empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $("#tweets-container").prepend($tweet);
     }
-    // calls createTweetElement for each tweet
-
     // takes return value and appends it to the tweets container
   };
 
   const createTweetElement = (tweet) => {
-    // TODO: replace <i> with avatar <img>
     const $tweet = $(`
   <article class="rhoda-tweets">
       <div class="rhoda-tweets-header">
@@ -85,14 +77,10 @@ $(document).ready(function () {
       },
     });
   };
-  // const $tweet = createTweetElement(tweetData);
 
-  // // Test / driver code (temporary)
-  // console.log($tweet); // to see what it looks like
-  // $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements,
+
   loadTweets();
 
-  // const $tweetItemForm = $()
   $(".tweet-form").submit(function (event) {
     // stop the browser from auto submitting the form
     event.preventDefault();
@@ -122,6 +110,4 @@ $(document).ready(function () {
     });
     // POST the data to the server
   });
-
-  // renderTweets(tweetData);
 });

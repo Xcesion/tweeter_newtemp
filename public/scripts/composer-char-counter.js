@@ -1,26 +1,15 @@
-
-$(document).ready(function() {
-  // --- our code goes here ---
-  // console.log($("#tweet-text"), inpu )
-  // $("#tweet-text").on('click', function() {
-  //   console.log("Hello this is a test"); //The this keyword is a reference to the button
-  // });
-  // $("#tweet-text").blur(function() {
-  //   console.log("Hello this is a test"); //The this keyword is a reference to the button
-  // });
-  $("#tweet-text").on('input', function() {
+$(document).ready(function () {
+  $("#tweet-text").on("input", function () {
     const inputValue = $(this).val();
     const inputLength = inputValue.length;
-    // console.log("Hello this is a test", inputValue); //The this keyword is a reference to the button
+    // Using "this" keyword to reference the button
+    // console.log("Hello this is a test", inputValue);
     // console.log("Input Length:", inputLength);
     $(".counter").text(140 - inputLength);
-    if(inputLength>140){
+    if (inputLength > 140) {
       $(".counter").addClass("toolong");
-    }else{
+    } else {
       $(".counter").removeClass("toolong");
     }
   });
-  // $(".counter").on('result', function() {
-  //   console.log("Hello this is a test for click", this); //The this keyword is a reference to the button
-  // });
 });

@@ -7,7 +7,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,40 +24,25 @@ body {
   align-items: center;
 }
 
-
-/* .new-tweet-header{
-  font-family: 'Bungee', sans;
-} */
-/* .avatar {
-  display: flex;
-  align-items: center;
-  flex-shrink: 4;
-} */
-
-
-/* media min 768px to max 1024px width = to . */
-
-main {  /* ask mentor how to make the with 90% as the core activity ask for */
+main {
   display: flex;
   width: 100%;
   align-items: center;
   background-color: #f4f1ec;
   justify-content: center;
   flex-direction: column;
-  align-content:flex-start
+  align-content: flex-start;
 }
 
-.toolong{
-  color:red;
+/* class & id specify layout */
+
+.toolong {
+  color: red;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
-
- @media only screen and (min-width: 1024px) {
-  .header-main-box{
-    display:flex;
+@media only screen and (min-width: 1024px) {
+  .header-main-box {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -63,9 +50,9 @@ main {  /* ask mentor how to make the with 90% as the core activity ask for */
     padding-top: 10%;
   }
   .user-profile-header {
-    margin: 5% 
+    margin: 5%;
   }
   .container {
     margin: 5%;
   }
- };
+}
