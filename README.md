@@ -10,5 +10,4 @@ A simple single-page AJAX-based Twitter clone that uses JQuery, HTML5 and plain 
 ## Screenshots
 
 !["Screenshot of Responsive Design in webpage layout"](https://github.com/Xcesion/tweeter_newtemp/blob/master/docs/responsive-design.png?raw=true)
-!["Screenshot of tweets with mobile layout"]
-(https://github.com/Xcesion/tweeter_newtemp/blob/master/docs/tweets-info.png?raw=true)
+!["Screenshot of tweets with mobile layout"](https://github.com/Xcesion/tweeter_newtemp/blob/master/docs/tweets-info.png?raw=true)
