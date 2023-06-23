@@ -88,7 +88,9 @@ $(document).ready(function () {
     // get the information from the form as urlencoded data
     const newtweet = $("#tweet-text").val();
     if (newtweet === "" || newtweet === null) {
-      alert("You can't tweet an empty post!");
+      $(".error-message-max-length")
+        .text("⚠️You can't tweet an empty post!⚠️")
+        .slideDown("slow");
     }
     if (newtweet.length > 140) {
       $(".error-message-max-length")

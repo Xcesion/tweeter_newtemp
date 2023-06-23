@@ -44,7 +44,7 @@ main {
   .header-main-box {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     padding-top: 10%;
