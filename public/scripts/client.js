@@ -30,9 +30,11 @@ $(document).ready(function () {
   ];
 
   const renderTweets = function (tweets) {
+    const $container = $('#tweets-container');
+    $container.empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $("#tweets-container").prepend($tweet);
+      $container.prepend($tweet);
     }
     // takes return value and appends it to the tweets container
   };
@@ -91,11 +93,13 @@ $(document).ready(function () {
       $(".error-message-max-length")
         .text("⚠️You can't tweet an empty post!⚠️")
         .slideDown("slow");
+        return;
     }
     if (newtweet.length > 140) {
       $(".error-message-max-length")
         .text("⚠️Your tweets reach to the max charaters!⚠️")
         .slideDown("slow");
+      return; 
     }
     const serializeData = $(this).serialize();
     console.log("this is serializedData:", serializeData);
