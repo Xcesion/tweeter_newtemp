@@ -78,6 +78,7 @@
 
 .icon:hover {
   color: burlywood;
+  cursor: pointer;
 }
 
 .rhoda-tweets-details {
